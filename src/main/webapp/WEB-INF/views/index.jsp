@@ -6,6 +6,10 @@ pageEncoding="ISO-8859-1"%>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Spring 4 MVC - HelloWorld Index Page</title>
+<style type="text/css">
+	.error{ color: red;}
+
+</style>
 </head>
 <body>
 	<jsp:include page="header.jsp"></jsp:include>
@@ -15,9 +19,10 @@ pageEncoding="ISO-8859-1"%>
 	</center>
 	
 	<center>
-	<form action="">
-		Username : <input type="text"> <br><br>
-		Password : <input type="Password"><br><br>
+	<form action="login" method="post">
+		<div class="error">${errorMessage}</div>
+		Username : <input name="username" type="text"> <br><br>
+		Password : <input name="password" type="Password"><br><br>
 		<input type="submit">
 		
 	</form>
