@@ -1,6 +1,7 @@
 package com.suvrat;
 
 import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,6 +14,7 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.NotBlank;
 
 import com.suvrat.validator.IsUniqueForUserAndEmail;
+
 
 @Entity
 @Table(name="user")
