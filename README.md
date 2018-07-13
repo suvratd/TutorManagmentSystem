@@ -6,3 +6,5 @@ Database: MySql.
 
 The project is still in Beta.
 Have a look https://cryptic-chamber-45999.herokuapp.com/
+
+Various other concepts like AJAX, API are developed while building this web Application.  
